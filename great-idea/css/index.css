@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -64,3 +66,217 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+	box-sizing: border-box;
+	}
+	header {
+		position: sticky;
+	}
+  header, nav {
+	  display: flex;
+	  width: 100%;
+		background-color: gray;
+		margin: 0px 0px 35px;
+  }
+  nav ul {
+	  display: flex;
+	  justify-content: center;
+	  padding: 8px;
+	  align-content: center;
+	  width: 85%;
+	}
+nav ul li {
+	padding: 0px 50px;
+	margin:  15px 10px;
+}
+nav ul li a {
+	text-decoration: none;
+}
+nav > a {
+	width: 15%;
+	justify-self: flex-start;
+}
+.active {
+	color: red;
+}
+nav ul li a:hover {
+  background-color: black;
+  border: 1px solid yellow;
+	border-radius: 25px 25px 25px 25px;
+	padding: 2px;
+	text-decoration: none;
+}
+nav ul li#nav-logo:hover {
+	background-color: yellow;
+}
+#container1 {
+	display: flex;
+	justify-content: space-evenly;
+}
+#container1 > .intro-left {
+	flex-direction: column;
+	display: flex;
+}
+#container1 > div > h1 {
+	align-self: center;
+	font-size: 90px;
+}
+.intro-left > h1 {
+  font-family: 'Montserrat', Roboto;
+}
+.intro-left > a > button {
+	border: 2px solid red;
+	border-radius: 2em;
+	justify-self: center;
+}
+
+/*Services.html*/
+section#svcs-top {
+	display: flex;
+	flex-direction: column;
+}
+.services-header-img {
+	width: 100%;
+	border: 2px solid red;
+}
+#svcs-top {
+	display: flex;
+	border-bottom: 2px solid;
+
+}
+#svcs-top > div {
+	margin: 20px 0px;
+	width: 100%;
+}
+div#svcs-mid {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-content: center;
+	
+}
+#svcs-mid > div {
+	width: 35%;
+	height: 250px;
+	border: 1px solid;
+	padding: 10px;
+	margin: 15px 0px;
+	display: flex;
+	flex-direction: column;
+}
+#svcs-mid div > button {
+	align-self: flex-start;
+	height: 40px;
+	width: 150px;
+	margin: auto 0;
+	background-color: white;
+	border-style: outset;
+}
+#bttm-content {
+	/*padding: 20px 15px;*/
+	border-top: 1px solid black;
+	display: inline;
+}
+#bttm-content div {
+	width: 48%;
+}
+#bttm-content > div > ul {
+	list-style: circle;
+}
+#bttm-content > div {
+	width: 100%;
+}
+/*
+* {
+	box-sizing: border-box;
+  }
+  header {
+		width: 100%;
+  }
+  nav {
+	display: flex;
+	width: 100%;
+	background-color: gray;
+  }
+  nav ul {
+	  flex-direction: row;
+	  display: flex;
+	  height: 50px;
+	  width: 100%;
+  }
+  nav ul li {
+	justify-content: flex-start;
+	padding-top: 20px;
+	padding: 8px;
+  }
+  nav ul li:last-child {
+
+  }
+  nav ul li#nav-logo {
+	align-self: baseline;
+  }
+  nav ul li#nav-logo:hover {
+	  background-color: yellow;
+  }
+  .logo {
+	display: inline-block;
+	right: 5%;
+  }
+  nav a {
+	margin: 7px;
+	padding: 0px 15px;
+	text-decoration: none;
+	color: rgb(214, 197, 197);
+  }
+  div#intro {
+	margin-bottom: 10%;
+  }
+  
+  #intro div {
+	width: 48%;
+	display: inline-block;
+  }
+  .intro-left {
+	text-align: center;
+	font-size: 75px;
+	margin: auto;
+  }
+  .intro-right {
+	margin: auto;
+  }
+  button {
+	padding: 10px 25px;
+	top: 0;
+	background-color: white;
+	border: 2px solid;
+  }
+  button:hover {
+	  background-color: blue;
+	  border-radius: 25%;
+  }
+  .two-clmn {
+	display: inline-block;
+	width: 49%;
+	padding: 30px;
+  }
+  .three-clmn {
+	display: inline-block;
+	width: 33%;
+	padding: 15px;
+  }
+  .middle-img {
+	width: 100%;
+  }
+  // ** Clear floats after the columns **
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  address {
+	  padding: 20px;
+  }
+  #cpyrght {
+	  text-align: center;
+  }
+  */
